@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'elastic-apm'
+gem 'elastic-apm' require: nil
 gem 'foreman'
 gem 'http'
 gem 'lograge'
