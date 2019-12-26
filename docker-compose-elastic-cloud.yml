@@ -4,7 +4,7 @@ services:
     build: .
     image: opbeans/opbeans-ruby:latest
     ports:
-      - "127.0.0.1:${OPBEANS_SERVER_PORT:-8000}:3000"
+      - "127.0.0.1:${OPBEANS_SERVER_PORT:-8001}:3000"
     container_name: opbeans-ruby
     logging:
       driver: 'json-file'
