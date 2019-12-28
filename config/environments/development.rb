@@ -10,8 +10,7 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports.
-  # Set to false so that Rails doesn't render it's own error views and errors are reported to APM
-  config.consider_all_requests_local = false
+  config.consider_all_requests_local = true
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
