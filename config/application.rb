@@ -20,9 +20,5 @@ module Opbeans
       urls: [%r{/images}, %r{/static}],
       root: Rails.root.join('frontend', 'build').to_s
 
-    # middleware.insert 0, OpbeansShuffle,
-    #   %r{/api},
-    #   services: ENV.fetch('OPBEANS_SERVICES', ''),
-    #   probability: ENV.fetch('OPBEANS_DT_PROBABILITY', 0.5)
   end
 end
